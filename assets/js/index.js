@@ -9,12 +9,21 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Validate contact form
-  document.getElementById('contactForm').addEventListener('submit', e => {
+  const formElement = document.getElementById('contactForm')
+  formElement.addEventListener('submit', e => {
     e.preventDefault()
 
     const nameInput = document.getElementById('nameInput')
     const emailInput = document.getElementById('emailInput')
     const messageInput = document.getElementById('messageInput')
+
+    const feedbackForm = document.createElement('p')
+    feedbackForm.classList.add('success')
+    const feedbackFormText = document.createTextNode('Merci ;)')
+    feedbackForm.appendChild(feedbackFormText)
+    formElement.appendChild(feedbackForm)
+
+    document.getElementById('submitContactForm').setAttribute('disabled', true)
 
     console.log(nameInput.value, emailInput.value, messageInput.value)
     return false

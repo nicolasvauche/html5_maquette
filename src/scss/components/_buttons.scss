@@ -19,4 +19,14 @@
             background-color: $color-primary;
         }
     }
+
+    &[disabled] {
+        opacity: 0.25;
+        cursor: not-allowed;
+
+        &:hover {
+            color: inherit;
+            background-color: inherit;
+        }
+    }
 }

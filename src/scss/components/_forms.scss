@@ -49,4 +49,18 @@
             font-weight: 900;
         }
     }
+
+    p {
+        margin: 0.5rem;
+        padding: 1.5rem 0;
+        font-family: $font-family-headings;
+        font-size: 1.25rem;
+        font-weight: 600;
+        border: 1px solid transparent;
+
+        &.success {
+            color: $color-success;
+            border-color: $color-success;
+        }
+    }
 }
