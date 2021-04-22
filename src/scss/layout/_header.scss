@@ -1,0 +1,32 @@
+.app-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background: linear-gradient(
+        rgba($color-black, 0.25), 
+        rgba($color-black, 0.25)
+      ), url("../images/bg-top.jpg") center bottom no-repeat;
+    background-size: cover;
+
+    .app-brand {
+        font-family: $font-family-headings;
+        text-align: center;
+
+        .app-brandname {
+            margin-bottom: 0.5rem;
+            font-size: 6rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $color-white;
+            border-bottom: 2px dashed $color-white;
+        }
+
+        .app-brandline {
+            font-size: 1.5rem;
+            color: $color-white;
+            text-transform: uppercase;
+        }
+    }
+}

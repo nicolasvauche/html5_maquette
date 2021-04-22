@@ -1,0 +1,20 @@
+/*****************************/
+/*** Global and Miscellaneous ***/
+/*****************************/
+html {
+    font-size: $font-size-default;
+    scroll-behavior: smooth;
+
+    body {
+        font-family: $font-family-default;
+        color: $color-black;
+
+        @import 
+            "header",
+            "navigation";
+
+        @import "main";
+
+        @import "footer";
+    }
+}

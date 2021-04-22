@@ -1,0 +1,15 @@
+.app-main {
+    section {
+        padding: $section-padding-y-default $section-padding-x-default;
+        text-align: center;
+
+        h2 {
+            margin: $section-padding-y-default 0;
+            font-size: 3rem;
+            text-transform: uppercase;
+        }
+    }
+
+    @import
+        "../pages/homepage";
+}

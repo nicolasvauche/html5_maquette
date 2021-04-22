@@ -1,0 +1,52 @@
+.app-form {
+    padding: 0 $section-padding-x-default;
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+
+        &.submit {
+            margin: $section-padding-y-default auto;
+            width: 50%;
+        }
+
+        .form-label {
+            order: 1;
+            display: block;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .form-control {
+            order: 2;
+            padding: 1rem 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: $font-family-default;
+            font-size: 1.25rem;
+            color: $color-black;
+            background-color: $color-white;
+            border: none;
+
+            &[required] + label:after {
+                content: "*";
+                margin-left: 0.25rem;
+                color: red;
+            }
+        }
+
+        textarea {
+            min-width: 100%;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+    }
+}

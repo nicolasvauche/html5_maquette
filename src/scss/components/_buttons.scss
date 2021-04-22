@@ -1,0 +1,22 @@
+.app-button {
+    text-decoration: none;
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-black;
+    cursor: pointer;
+
+    &.cta {
+        display: inline-block;
+        margin: $section-padding-y-default 0;
+        padding: calc(#{$section-padding-y-default} / 2) $section-padding-x-default;
+        text-transform: uppercase;
+        color: $color-primary;
+        border-color: $color-primary;
+        transition: all 0.5s;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+}

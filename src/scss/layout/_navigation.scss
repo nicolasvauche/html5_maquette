@@ -1,0 +1,41 @@
+.app-navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    padding: calc(#{$section-padding-y-default} / 2) $section-padding-x-default;
+    background-color: transparent;
+    transition: background-color 0.5s;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        li {
+            a {
+                margin: 0 1rem;
+                font-family: $font-family-headings;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: rgba($color-white, 0.85);
+                border-bottom: 3px dashed transparent;
+                text-shadow: 1px 1px 0 rgba($color-black, 0.5);
+                transition: all 0.5s;
+
+                &:hover {
+                    color: rgba($color-white, 1);
+                    border-color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+&.scrolled {
+    .app-navigation {
+        background-color: $color-primary;
+    }
+}
