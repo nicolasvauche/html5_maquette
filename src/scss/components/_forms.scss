@@ -1,6 +1,10 @@
 .app-form {
     padding: 0 $section-padding-x-default;
 
+    @include for-tablet() {
+        padding: 0 calc(#{$section-padding-x-default} / 2);
+    }
+
     .form-group {
         display: flex;
         flex-direction: column;

@@ -14,9 +14,18 @@
     color: $color-white;
     background-color: $color-primary;
 
+    @include for-tablet() {
+        padding-top: calc(#{$section-padding-y-default} * 2);
+        display: block;
+    }
+
     .section-media {
         position: relative;
         overflow: hidden;
+
+        @include for-tablet() {
+            display: none;
+        }
 
         img {
             position: absolute;
@@ -31,6 +40,10 @@
     .section-content {
         h2 {
             margin: calc(#{$section-padding-y-default} * 2) 0 0;
+
+            @include for-tablet() {
+                margin: 0;
+            }
         }
 
         blockquote {

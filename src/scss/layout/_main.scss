@@ -3,6 +3,10 @@
         padding: $section-padding-y-default $section-padding-x-default;
         text-align: center;
 
+        @include for-tablet() {
+            padding: $section-padding-y-default calc(#{$section-padding-x-default} / 2);
+        }
+
         h2 {
             margin: $section-padding-y-default 0;
             font-size: 3rem;

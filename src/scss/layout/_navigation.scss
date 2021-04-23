@@ -7,10 +7,19 @@
     background-color: transparent;
     transition: background-color 0.5s;
 
+    @include for-tablet() {
+        padding: calc(#{$section-padding-y-default} / 2) 0;
+        width: 100vw;
+    }
+
     ul {
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        @include for-tablet() {
+            justify-content: center;
+        }
 
         li {
             a {

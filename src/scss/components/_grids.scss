@@ -4,12 +4,15 @@
     grid-gap: $section-padding-y-default;
     margin: $section-padding-y-default 0;
 
+    @include for-tablet() {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     &.two {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .grid-item{
-
+    .grid-item {
         .grid-item-image {
             border: 1px solid $color-primary;
 
