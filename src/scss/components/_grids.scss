@@ -4,12 +4,16 @@
     grid-gap: $section-padding-y-default;
     margin: $section-padding-y-default 0;
 
-    @include for-tablet() {
+    &.two {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    &.two {
-        grid-template-columns: repeat(2, 1fr);
+    @include for-tablet() {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    @include for-phone() {
+        grid-template-columns: 1fr !important;
     }
 
     .grid-item {
@@ -19,6 +23,11 @@
             &.rounded {
                 border-radius: 50%;
             }
+        }
+
+        .grid-content {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .grid-item-title {

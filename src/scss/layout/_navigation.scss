@@ -12,12 +12,27 @@
         width: 100vw;
     }
 
+    @include for-phone() {
+        top: inherit;
+        left: 0;
+        bottom: 0;
+        padding: 0.5rem 0 0.25rem;
+        background-color: $color-primary;
+    }
+
     ul {
         display: flex;
         align-items: center;
         justify-content: flex-end;
 
         @include for-tablet() {
+            justify-content: center;
+        }
+
+        @include for-phone {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: flex-end;
             justify-content: center;
         }
 
@@ -34,9 +49,36 @@
                 text-shadow: 1px 1px 0 rgba($color-black, 0.5);
                 transition: all 0.5s;
 
+                @include for-phone {
+                    display: block;
+                    margin: 0;
+                    font-size: 0.6rem;
+                    text-align: center;
+                }
+
                 &:hover {
                     color: rgba($color-white, 1);
                     border-color: $color-white;
+
+                    @include for-phone {
+                        border-color: transparent;
+                    }
+                }
+
+                i {
+                    display: none;
+
+                    @include for-phone {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        font-size: 2.25rem;
+                    }
+                }
+
+                span {
+                    @include for-phone {
+                        display: none;
+                    }
                 }
             }
         }

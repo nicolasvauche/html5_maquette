@@ -1,9 +1,38 @@
 #projet {
     font-size: 1.5rem;
+
+    @include for-phone() {
+        font-size: 1.25rem;
+    }
 }
 
 #equipe {
-    background-color: $color-grey;
+    background: linear-gradient(to right, $color-grey, $color-white);
+
+    .grid-item {
+        .grid-item-image {
+            transform: rotate(3deg);
+            transition: transform 0.5s;
+        }
+
+        &:nth-child(odd) {
+            .grid-item-image {
+                transform: rotate(3deg);
+            }
+        }
+
+        &:nth-child(even) {
+            .grid-item-image {
+                transform: rotate(-3deg);
+            }
+        }
+
+        &:hover {
+            .grid-item-image {
+                transform: rotate(0deg);
+            }
+        }
+    }
 }
 
 #temoignages {
@@ -17,6 +46,10 @@
     @include for-tablet() {
         padding-top: calc(#{$section-padding-y-default} * 2);
         display: block;
+    }
+
+    @include for-phone() {
+        font-size: 1rem;
     }
 
     .section-media {
@@ -51,6 +84,10 @@
             padding: $section-padding-x-default;
             font-style: italic;
 
+            @include for-phone() {
+                padding: calc(#{$section-padding-x-default} / 2) calc(#{$section-padding-x-default} / 4);
+            }
+
             &:before,
             &:after {
                 position: absolute;
@@ -61,11 +98,21 @@
             &:before {
                 top: 2rem;
                 left: 3rem;
+
+                @include for-phone() {
+                    top: 0;
+                    left: -0.75rem;
+                }
             }
 
             &:after {
                 bottom: -1rem;
                 right: 3rem;
+
+                @include for-phone() {
+                    bottom: -4rem;
+                    right: 0.75rem;
+                }
             }
 
             .legend {
@@ -87,13 +134,26 @@
         align-items: flex-end;
         justify-content: space-between;
 
-        .grid-item {
+        @include for-phone {
+            display: block;
+            padding: calc(#{$section-padding-y-default} / 2) calc(#{$section-padding-x-default} / 4) 0;
+        }
+
+        .info {
             font-weight: 900;
             vertical-align: baseline;
+
+            @include for-phone {
+                text-align: center;
+            }
 
             i {
                 margin-right: 1.5rem;
                 font-size: 2rem;
+
+                @include for-phone {
+                    margin: 0 0 1rem;
+                }
             }
 
             address {
@@ -103,6 +163,12 @@
                 font-weight: 900;
                 font-style: normal;
                 text-align: left;
+
+                @include for-phone {
+                    display: block;
+                    margin-bottom: 2.5rem;
+                    text-align: center;
+                }
             }
         }
     }

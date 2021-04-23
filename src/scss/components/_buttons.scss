@@ -14,6 +14,10 @@
         border-color: $color-primary;
         transition: all 0.5s;
 
+        @include for-phone() {
+            padding: calc(#{$section-padding-y-default} / 2) calc(#{$section-padding-x-default} / 2);
+        }
+
         &:hover {
             color: $color-white;
             background-color: $color-primary;
