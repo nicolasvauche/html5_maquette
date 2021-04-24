@@ -9,6 +9,11 @@
 #equipe {
     background: linear-gradient(to right, $color-grey, $color-white);
 
+    @include for-phone {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .grid-item {
         .grid-item-image {
             transform: rotate(3deg);

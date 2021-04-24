@@ -13,10 +13,21 @@
     }
 
     @include for-phone() {
-        grid-template-columns: 1fr !important;
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .grid-item {
+        @include for-phone() {
+            flex: 0 0 100%;
+        }
+
         .grid-item-image {
             border: 1px solid $color-primary;
 
