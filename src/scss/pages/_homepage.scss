@@ -14,27 +14,47 @@
         padding-right: 0;
     }
 
-    .grid-item {
-        .grid-item-image {
-            transform: rotate(3deg);
-            transition: transform 0.5s;
+    .app-grid {
+        @include for-phone() {
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
         }
 
-        &:nth-child(odd) {
+        .grid-item {
+            @include for-phone() {
+                flex: 0 0 calc(100% - (#{$section-padding-x-default} / 2));
+                padding-left: calc(#{$section-padding-x-default} / 4);
+                padding-right: calc(#{$section-padding-x-default} / 4);
+                scroll-snap-align: start;
+            }
+
             .grid-item-image {
                 transform: rotate(3deg);
+                transition: transform 0.5s;
             }
-        }
 
-        &:nth-child(even) {
-            .grid-item-image {
-                transform: rotate(-3deg);
+            &:nth-child(odd) {
+                .grid-item-image {
+                    transform: rotate(3deg);
+                }
             }
-        }
 
-        &:hover {
-            .grid-item-image {
-                transform: rotate(0deg);
+            &:nth-child(even) {
+                .grid-item-image {
+                    transform: rotate(-3deg);
+                }
+            }
+
+            &:hover {
+                .grid-item-image {
+                    transform: rotate(0deg);
+                }
             }
         }
     }

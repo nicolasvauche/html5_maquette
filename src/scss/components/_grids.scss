@@ -12,22 +12,7 @@
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
-    @include for-phone() {
-        display: flex;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
     .grid-item {
-        @include for-phone() {
-            flex: 0 0 100%;
-        }
-
         .grid-item-image {
             border: 1px solid $color-primary;
 
