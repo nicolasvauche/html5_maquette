@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Smooth scrolling assistance for Safari / IOS
+  zenscroll.setup(1000, 0)
+  const navigationLinks = document.querySelectorAll(
+    '#appNavigation > ul > li > a'
+  )
+  for (let i = 0; i < navigationLinks.length; i++) {
+    navigationLinks[i].addEventListener('click', e => {
+      if (navigationLinks[i].getAttribute('href') !== './') {
+        e.preventDefault()
+        const targetId = navigationLinks[i]
+          .getAttribute('href')
+          .replace('./#', '')
+        const targetElement = document.getElementById(targetId)
+        zenscroll.to(targetElement, 200)
+      }
+    })
+  }
+
   // Change navigation bgcolor on scroll
   window.addEventListener('scroll', () => {
     if (window.scrollY > 580) {

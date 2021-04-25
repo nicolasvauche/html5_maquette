@@ -4,6 +4,7 @@
 html {
     font-size: $font-size-default;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
 
     body {
         font-family: $font-family-default;
