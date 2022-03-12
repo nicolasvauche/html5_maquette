@@ -1,185 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Ma Super Belle Maquette</title>
-        <meta name="description" content="…" />
+    <title>Ma Super Belle Maquette</title>
+    <meta name="description" content="…" />
 
-        <!-- Google webfonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-	    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&amp;family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&amp;display=swap" rel="stylesheet"> 
-	    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
-        
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <!-- Google webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&amp;family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-        <!-- Javascripts -->
-        <script src="assets/js/zenscroll-min.js" defer></script>
-        <script src="assets/js/index.js" defer></script>
-    </head>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
 
-    <body>
+    <!-- Javascripts -->
+    <script src="assets/js/zenscroll-min.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </head>
 
-        <!-- Layout main header -->
-        <header class="app-header">
+  <body>
+    <!-- Layout main header -->
+    <header class="app-header">
+      <!-- Layout main navigation -->
+      <nav class="app-navigation" id="appNavigation">
+        <ul>
+          <li>
+            <a href="./" title="Retour à l'accueil"
+              ><i class="fas fa-home"></i>Accueil</a
+            >
+          </li>
+          <li>
+            <a href="./#projet" title="Section mon projet"
+              ><i class="fas fa-tasks"></i><span>Mon </span>projet</a
+            >
+          </li>
+          <li>
+            <a href="./#equipe" title="Section mon équipe"
+              ><i class="fas fa-users"></i><span>Mon </span>équipe</a
+            >
+          </li>
+          <li>
+            <a href="./#temoignages" title="Section témoignages"
+              ><i class="fas fa-comments"></i>Témoignages</a
+            >
+          </li>
+          <li>
+            <a href="./#contact" title="Formulaire de contact"
+              ><i class="fas fa-envelope"></i>Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-            <!-- Layout main navigation -->
-            <nav class="app-navigation" id="appNavigation">
-                <ul>
-                    <li>
-                        <a href="./" title="Accueil"><i class="fas fa-home"></i>Accueil</a>
-                    </li>
-                    <li>
-                        <a href="./#projet" title="Mon projet"><i class="fas fa-tasks"></i><span>Mon </span>projet</a>
-                    </li>
-                    <li>
-                        <a href="./#equipe" title="Mon équipe"><i class="fas fa-users"></i><span>Mon </span>équipe</a>
-                    </li>
-                    <li>
-                        <a href="./#temoignages" title="Témoignages"><i class="fas fa-comments"></i>Témoignages</a>
-                    </li>
-                    <li>
-                        <a href="./#contact" title="Contact"><i class="fas fa-envelope"></i>Contact</a>
-                    </li>
-                </ul>
-            </nav>
+      <div class="app-brand">
+        <h1 class="app-brandname">Titre</h1>
+        <h2 class="app-brandline">Description du site</h2>
+      </div>
+    </header>
 
-            <div class="app-brand">
-                <h1 class="app-brandname">Titre</h1>
-                <p class="app-brandline">Description du site</p>
+    <!-- Layout main sections -->
+    <main class="app-main">
+      <!-- Project section -->
+      <section id="projet">
+        <h2>Mon projet</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+          egestas quam in ligula vestibulum elementum. In ut velit nec eros
+          blandit finibus sit amet ullamcorper magna. In gravida ex in diam
+          aliquet tempor. Mauris pharetra placerat consectetur. Proin mattis
+          tellus non libero tristique. Duis mi eros.
+        </p>
+        <a href="#" class="app-button cta" role="button">En savoir plus</a>
+      </section>
+
+      <!-- Team section -->
+      <section id="equipe">
+        <h2>Mon équipe</h2>
+
+        <div class="app-grid">
+          <div class="grid-item">
+            <img
+              src="assets/images/arthur.jpg"
+              class="grid-item-image rounded"
+              width="200"
+              alt="Arthur"
+            />
+            <div class="grid-content">
+              <h3 class="grid-item-title">Arthur</h3>
+              <p>Proin mattis tellus non libero tristique. Duis mi.</p>
             </div>
-        </header>
+          </div>
 
-        <!-- Layout main sections -->
-        <main class="app-main">
-
-            <!-- Project section -->
-            <section id="projet">
-                <h2>Mon projet</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas quam in ligula vestibulum elementum. In ut velit nec eros blandit finibus sit amet ullamcorper magna. In gravida ex in diam aliquet tempor. Mauris pharetra placerat consectetur. Proin mattis tellus non libero tristique. Duis mi eros.</p>
-                <a href="#" class="app-button cta" role="button">En savoir plus</a>
-            </section>
-
-            <!-- Team section -->
-            <section id="equipe">
-                <h2>Mon équipe</h2>
-
-                <div class="app-grid">
-                    <div class="grid-item">
-                        <img src="assets/images/arthur.jpg" class="grid-item-image rounded" width="200" alt="Arthur" />
-                        <div class="grid-content">
-                            <h3 class="grid-item-title">Arthur</h3>
-                            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="assets/images/celine.jpg" class="grid-item-image rounded" width="200" alt="Céline" />
-                        <div class="grid-content">
-                            <h3 class="grid-item-title">Céline</h3>
-                            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="assets/images/leo.jpg" class="grid-item-image rounded" width="200" alt="Léo" />
-                        <div class="grid-content">
-                            <h3 class="grid-item-title">Léo</h3>
-                            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <img src="assets/images/cyril.jpg" class="grid-item-image rounded" width="200" alt="Cyril" />
-                        <div class="grid-content">
-                            <h3 class="grid-item-title">Cyril</h3>
-                            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Testimonials section -->
-            <section id="temoignages">
-                <div class="section-media">
-                    <img src="assets/images/road.jpg" alt="Témoignages" />
-                </div>
-
-                <div class="section-content">
-                    <h2>Témoignages</h2>
-                    <blockquote>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas quam in ligula vestibulum elementum. In ut velit nec eros blandit finibus sit amet ullamcorper magna. In gravida ex in diam aliquet tempor. Mauris pharetra placerat consectetur.
-                        <span class="legend">Pierre Ceval</span>
-                    </blockquote>
-                </div>
-            </section>
-
-            <!-- Contact section -->
-            <section id="contact">
-                <h2>Contact</h2>
-
-                <form class="app-form" id="contactForm" method="post">
-                    <div class="app-grid two">
-                        <div class="form-group">
-                            <input type="text" id="nameInput" name="name" class="form-control" required />
-                            <label for="nameInput" class="form-label">Nom</label>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="emailInput" name="email" class="form-control" required />
-                            <label for="emailInput" class="form-label">Email</label>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea id="messageInput" name="message" rows="4" class="form-control" required></textarea>
-                        <label for="messageInput" class="form-label">Message</label>
-                    </div>
-
-                    <div class="form-group submit">
-                        <button type="submit" id="submitContactForm" class="app-button cta">Envoyer</button>
-                    </div>
-                </form>
-
-                <div class="infos">
-                    <div class="info">
-                        <i class="fas fa-phone fa-flip-horizontal"></i>
-                        <address>
-                            01.23.45.67.89
-                        </address>
-                    </div>
-
-                    <div class="info">
-                        <i class="fas fa-home"></i>
-                        <address>
-                            12 rue du Général<br />
-                            87000 Limoges
-                        </address>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Layout main footer -->
-        <footer class="app-footer">
-            <div class="footerlinks">
-                <ul>
-                    <li>
-                        <a href="#" title="Mentions légales">Mentions légales</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Plan du site">Plan du site</a>
-                    </li>
-                </ul>
-
-                <p class="copyrights">
-                    © Copyright
-                </p>
+          <div class="grid-item">
+            <img
+              src="assets/images/celine.jpg"
+              class="grid-item-image rounded"
+              width="200"
+              alt="Céline"
+            />
+            <div class="grid-content">
+              <h3 class="grid-item-title">Céline</h3>
+              <p>Proin mattis tellus non libero tristique. Duis mi.</p>
             </div>
-        </footer>
-    </body>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="assets/images/leo.jpg"
+              class="grid-item-image rounded"
+              width="200"
+              alt="Léo"
+            />
+            <div class="grid-content">
+              <h3 class="grid-item-title">Léo</h3>
+              <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="assets/images/cyril.jpg"
+              class="grid-item-image rounded"
+              width="200"
+              alt="Cyril"
+            />
+            <div class="grid-content">
+              <h3 class="grid-item-title">Cyril</h3>
+              <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section id="temoignages">
+        <div class="section-media">
+          <img src="assets/images/road.jpg" alt="Témoignages" />
+        </div>
+
+        <div class="section-content">
+          <h2>Témoignages</h2>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            egestas quam in ligula vestibulum elementum. In ut velit nec eros
+            blandit finibus sit amet ullamcorper magna. In gravida ex in diam
+            aliquet tempor. Mauris pharetra placerat consectetur.
+            <span class="legend">Pierre Ceval</span>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <form class="app-form" id="contactForm" method="post">
+          <div class="app-grid two">
+            <div class="form-group">
+              <input
+                type="text"
+                id="nameInput"
+                name="name"
+                class="form-control"
+                required
+                aria-required="true"
+              />
+              <label for="nameInput" class="form-label">Nom</label>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="email"
+                id="emailInput"
+                name="email"
+                class="form-control"
+                required
+                aria-required="true"
+              />
+              <label for="emailInput" class="form-label">Email</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="messageInput"
+              name="message"
+              rows="4"
+              class="form-control"
+              required
+              aria-required="true"
+            ></textarea>
+            <label for="messageInput" class="form-label">Message</label>
+          </div>
+
+          <div class="form-group submit">
+            <button type="submit" id="submitContactForm" class="app-button cta">
+              Envoyer
+            </button>
+          </div>
+        </form>
+
+        <div class="infos">
+          <div class="info">
+            <i class="fas fa-phone fa-flip-horizontal"></i>
+            <address>01.23.45.67.89</address>
+          </div>
+
+          <div class="info">
+            <i class="fas fa-home"></i>
+            <address>
+              12 rue du Général<br />
+              87000 Limoges
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Layout main footer -->
+    <footer class="app-footer">
+      <div class="footerlinks">
+        <ul>
+          <li>
+            <a href="#" title="Lire les mentions légales">Mentions légales</a>
+          </li>
+          <li>
+            <a href="#" title="Voir le plan du site">Plan du site</a>
+          </li>
+        </ul>
+
+        <p class="copyrights">© Copyright</p>
+      </div>
+    </footer>
+  </body>
 </html>
