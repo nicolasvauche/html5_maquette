@@ -1,0 +1,32 @@
+.app-blockquote {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+  font-style: italic;
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: '"';
+    font-size: 4rem;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    bottom: 0;
+    right: 0;
+  }
+
+  blockquote {
+    margin-bottom: 1.5rem;
+  }
+
+  figcaption {
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+  }
+}

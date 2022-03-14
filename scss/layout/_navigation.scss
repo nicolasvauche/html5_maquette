@@ -1,0 +1,22 @@
+.app-navigation {
+  padding: 1rem 3rem;
+
+  @include media($until: "sm") {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  a {
+    margin: 0 0.5rem;
+    font-family: $font-family-secondary;
+    font-weight: 900;
+    text-decoration: none;
+
+    @include media($until: "sm") {
+      margin: 0;
+      font-size: 0.75rem;
+    }
+  }
+}

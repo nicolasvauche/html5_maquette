@@ -1,0 +1,7 @@
+.app-image {
+  border: 1px solid $color-primary;
+
+  &.rounded {
+    border-radius: 50%;
+  }
+}

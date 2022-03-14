@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  body {
+    font-family: $font-family-primary;
+    color: $color-black;
+    background-color: $color-black;
+
+    & > header,
+    & > main,
+    & > footer {
+      margin: 0 auto;
+      width: 60vw;
+
+      @include media($until: "lg") {
+        width: auto;
+      }
+    }
+  }
+}

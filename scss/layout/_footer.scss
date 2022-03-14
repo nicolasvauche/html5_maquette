@@ -1,0 +1,13 @@
+.app-footer {
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-secondary;
+
+  a {
+    text-decoration: none;
+    color: rgba($color-black, 0.75);
+  }
+}

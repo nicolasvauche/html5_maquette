@@ -1,0 +1,33 @@
+.app-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  background: url("../img/bg-top.jpg") no-repeat center center;
+  background-size: cover;
+
+  & > nav {
+    align-self: flex-end;
+
+    @include media($until: "sm") {
+      align-self: center;
+    }
+
+    a {
+      text-transform: uppercase;
+      color: $color-white;
+    }
+  }
+
+  .brandname {
+    margin: auto 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+
+    .app-slogan {
+      font-family: $font-family-secondary;
+    }
+  }
+}

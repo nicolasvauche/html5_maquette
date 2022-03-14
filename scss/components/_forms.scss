@@ -1,0 +1,46 @@
+.app-form {
+  .app-form-group {
+    grid-gap: 1rem;
+    margin-bottom: 3rem;
+    text-align: left;
+
+    label {
+      display: block;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .app-form-control {
+      box-sizing: border-box;
+      padding: 0.5rem 1rem;
+      width: 100%;
+      font-size: 1rem;
+      border-color: transparent;
+    }
+
+    textarea {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 4.5rem;
+    }
+  }
+
+  .app-form-actions {
+    button {
+      margin-top: 0;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &[type="submit"] {
+        font-weight: bold;
+        border-width: 2px;
+
+        &:hover {
+          color: $color-white;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}

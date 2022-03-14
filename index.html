@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mon site</title>
+
+    <!-- Google webfonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&amp;family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/9c886c380c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body class="home">
+    <header class="app-header">
+      <nav class="app-navigation">
+        <a href="index.html">Accueil</a>
+        <a href="#projet">Mon projet</a>
+        <a href="#equipe">Mon équipe</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="brandname">
+        <h1 class="app-name">Titre</h1>
+        <p class="app-slogan">Description du site</p>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <section id="projet">
+        <h2>Mon projet</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <strong>Quisque</strong>
+          egestas quam in ligula vestibulum elementum. In ut velit nec eros
+          blandit finibus sit amet ullamcorper magna. In gravida ex in diam
+          aliquet tempor. Mauris pharetra placerat consectetur. Proin mattis
+          tellus non libero tristique. Duis mi eros.
+        </p>
+
+        <a href="#" class="app-btn">En savoir plus</a>
+      </section>
+
+      <section id="equipe">
+        <h2>Mon équipe</h2>
+
+        <div class="app-grid four">
+          <div class="app-grid-item">
+            <img
+              src="img/arthur.jpg"
+              class="app-image rounded"
+              alt="Photo d'Arthur"
+            />
+            <h3 class="app-grid-item-title">Arthur</h3>
+            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+          </div>
+          <div class="app-grid-item">
+            <img
+              src="img/celine.jpg"
+              class="app-image rounded"
+              alt="Photo de Céline"
+            />
+            <h3 class="app-grid-item-title">Céline</h3>
+            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+          </div>
+          <div class="app-grid-item">
+            <img
+              src="img/leo.jpg"
+              class="app-image rounded"
+              alt="Photo de Léo"
+            />
+            <h3 class="app-grid-item-title">Léo</h3>
+            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+          </div>
+          <div class="app-grid-item">
+            <img
+              src="img/cyril.jpg"
+              class="app-image rounded"
+              alt="Photo de Cyril"
+            />
+            <h3 class="app-grid-item-title">Cyril</h3>
+            <p>Proin mattis tellus non libero tristique. Duis mi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="temoignages">
+        <div class="decoration" aria-hidden="true"></div>
+        <div class="content">
+          <h2>Témoignages</h2>
+          <figure class="app-blockquote">
+            <blockquote>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                egestas quam in ligula vestibulum elementum. In ut velit nec
+                eros blandit finibus sit amet ullamcorper magna. In gravida ex
+                in diam aliquet tempor. Mauris pharetra placerat consectetur.
+              </p>
+            </blockquote>
+            <figcaption>Pierre Ceval</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <form method="post" class="app-form">
+          <div class="app-form-group app-grid two">
+            <div class="app-form-group">
+              <label for="contactformName">Nom</label>
+              <input
+                type="text"
+                id="contactformName"
+                name="name"
+                class="app-form-control"
+                minlength="3"
+                pattern="[a-z]{1,15}"
+                required
+              />
+            </div>
+            <div class="app-form-group">
+              <label for="contactformEmail">Email</label>
+              <input
+                type="email"
+                id="contactformEmail"
+                name="email"
+                class="app-form-control"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="app-form-group">
+            <label for="contactformMessage">Message</label>
+            <textarea
+              name="message"
+              id="contactformMessage"
+              rows="3"
+              class="app-form-control"
+            ></textarea>
+          </div>
+
+          <div class="app-form-actions">
+            <button type="submit" class="app-btn">Envoyer</button>
+          </div>
+        </form>
+
+        <div class="informations app-grid two">
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            01.23.45.67.89
+          </p>
+
+          <p>
+            <i class="fas fa-home"></i>
+            12 rue du Général<br />87000 Limoges
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <a href="#" title="Lire les mentions légales">Mentions légales</a>
+      |
+      <a href="#" title="Voir le plan du site">Plan du site</a>
+      | © Copyright
+    </footer>
+  </body>
+</html>

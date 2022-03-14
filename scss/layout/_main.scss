@@ -1,0 +1,15 @@
+.app-main {
+  section {
+    padding: 3rem 4rem;
+    text-align: center;
+
+    @include media($until: "sm") {
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+  }
+}

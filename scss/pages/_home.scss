@@ -1,0 +1,76 @@
+body {
+  &.home {
+    main {
+      background-color: $color-secondary;
+
+      section {
+        &#projet {
+          background-color: $color-white;
+        }
+
+        &#temoignages {
+          display: grid;
+          grid-template-columns: 3fr 7fr;
+          padding: 0;
+          color: $color-white;
+          background-color: $color-primary;
+
+          @include media($until: "sm") {
+            display: block;
+          }
+
+          .decoration {
+            background: url("../img/road.jpg") no-repeat center center;
+            background-size: cover;
+
+            @include media($until: "sm") {
+              height: 20vh;
+            }
+          }
+
+          .content {
+            padding: 3rem;
+
+            @include media($until: "sm") {
+              padding: 3rem 1rem;
+            }
+          }
+        }
+
+        &#contact {
+          form,
+          .informations {
+            margin: 0 auto 3rem;
+            width: 80%;
+
+            @include media($until: "sm") {
+              margin: 0 0 3rem;
+              width: auto;
+            }
+          }
+
+          .informations {
+            margin: 0 auto 1rem;
+            font-weight: bold;
+
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: left;
+
+              @include media($until: "sm") {
+                margin-bottom: 3rem;
+              }
+
+              i {
+                margin-right: 1rem;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

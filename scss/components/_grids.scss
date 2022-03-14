@@ -1,0 +1,31 @@
+.app-grid {
+  display: grid;
+  grid-gap: 2.5rem;
+
+  &.two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &.four {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include media($from: "sm", $until: "lg") {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include media($until: "sm") {
+    display: block;
+  }
+
+  .app-grid-item {
+    @include media($until: "sm") {
+      margin-bottom: 3rem;
+    }
+
+    img,
+    .app-grid-item-title {
+      margin-bottom: 2rem;
+    }
+  }
+}
